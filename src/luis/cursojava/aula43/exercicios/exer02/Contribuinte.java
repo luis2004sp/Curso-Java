@@ -38,4 +38,16 @@ public class Contribuinte {
         return s;
     }
 
+    public double calcularImposto() {
+        return 0;
+    }
+
+    public Contribuinte(String nome, double salario) {
+        this.nome = nome;
+        this.salario = salario;
+    }
+
+    public Contribuinte() {
+    }
+
 }

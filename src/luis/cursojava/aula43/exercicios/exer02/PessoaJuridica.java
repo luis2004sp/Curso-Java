@@ -10,16 +10,24 @@ package luis.cursojava.aula43.exercicios.exer02;
  */
 public class PessoaJuridica extends Contribuinte {
 
+    public PessoaJuridica() {
+    }
+
+    public PessoaJuridica(String nome, double salario) {
+        super(nome, salario);
+    }
+
     @Override
     public String toString() {
         String s = "PessoaJuridica{" + '\n';
         s += "Nome: " + this.getNome() + '\n';
         s += "Salario: R$" + this.getSalario() + '\n';
         s += "Imposto: R$" + this.calcularImposto();
-        s += '}';
+        s += '}' + '\n';
         return s;
     }
 
+    @Override
     public double calcularImposto() {
         return (this.getSalario() * 0.1);
     }
