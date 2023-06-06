@@ -20,10 +20,10 @@ public class InstanceOf {
             System.out.println("é do tipo Pessoa");
         }
         if (aluno instanceof Aluno) {
-            System.out.println("é do tipo Pessoa");
+            System.out.println("é do tipo Aluno");
         }
         if (prof instanceof Professor) {
-            System.out.println("é do tipo Pessoa");
+            System.out.println("é do tipo Professor");
         }
     }
 }
