@@ -12,6 +12,13 @@ public class Cubo extends Figura3D {
 
     private double lado;
 
+    public Cubo() {
+    }
+
+    public Cubo(double lado) {
+        this.lado = lado;
+    }
+
     public double getLado() {
         return lado;
     }
@@ -21,7 +28,7 @@ public class Cubo extends Figura3D {
     }
 
     @Override
-    public double calcularArea() {
+    public double calculaArea() {
         return (6 * (lado * lado));
     }
 
@@ -33,9 +40,13 @@ public class Cubo extends Figura3D {
     @Override
     public String toString() {
         String s = "{";
-        s+="Area: " + calcularArea() + " - ";
-        s+= "Volume: " + calcularVolume();
-        s+="}";
+        s += this.getNome() + '\n';
+        s += this.getCor() + '\n';
+        s += "Lado: " + this.getLado() + '\n';
+        s += "Araa: " + this.calculaArea() + '\n';
+        s += "Volume: " + this.calcularVolume();
+        s += "}";
+
         return s;
     }
 

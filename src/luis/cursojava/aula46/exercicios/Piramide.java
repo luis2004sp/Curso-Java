@@ -13,12 +13,15 @@ public class Piramide extends Figura3D {
     private double altura, arestaBase, apotema, numPoliBase;
     private Figura2D base;
 
-    public double getNumPoliBase() {
-        return numPoliBase;
+    public Piramide() {
     }
 
-    public void setNumPoliBase(double numPoliBase) {
+    public Piramide(double altura, double arestaBase, double apotema, double numPoliBase, Figura2D base) {
+        this.altura = altura;
+        this.arestaBase = arestaBase;
+        this.apotema = apotema;
         this.numPoliBase = numPoliBase;
+        this.base = base;
     }
 
     public double getAltura() {
@@ -45,6 +48,14 @@ public class Piramide extends Figura3D {
         this.apotema = apotema;
     }
 
+    public double getNumPoliBase() {
+        return numPoliBase;
+    }
+
+    public void setNumPoliBase(double numPoliBase) {
+        this.numPoliBase = numPoliBase;
+    }
+
     public Figura2D getBase() {
         return base;
     }
@@ -54,9 +65,9 @@ public class Piramide extends Figura3D {
     }
 
     @Override
-    public double calcularArea() {
+    public double calculaArea() {
         if (base != null) {
-            return numPoliBase * (arestaBase * apotema / 2) + base.calcularArea();
+            return numPoliBase * (arestaBase * apotema / 2) + base.calculaArea();
         }
         return 0;
     }
@@ -64,9 +75,21 @@ public class Piramide extends Figura3D {
     @Override
     public double calcularVolume() {
         if (base != null) {
-            return (base.calcularArea() * altura) / 3;
+            return (base.calculaArea() * altura) / 3;
         }
         return 0;
+    }
+
+    @Override
+    public String toString() {
+        String s = "{ ";
+        s += this.getNome() + '\n';
+        s += this.getCor() + '\n';
+        s += "Araa: " + this.calculaArea() + '\n';
+        s += "Volume: " + this.calcularVolume();
+        s += " }";
+
+        return s;
     }
 
 }

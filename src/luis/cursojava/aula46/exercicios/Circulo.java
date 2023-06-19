@@ -12,6 +12,13 @@ public class Circulo extends Figura2D {
 
     private double raio;
 
+    public Circulo() {
+    }
+
+    public Circulo(double raio) {
+        this.raio = raio;
+    }
+
     public double getRaio() {
         return raio;
     }
@@ -21,8 +28,20 @@ public class Circulo extends Figura2D {
     }
 
     @Override
-    public double calcularArea() {
-        return (Math.PI * (Math.pow(raio, 2)));
+    public double calculaArea() {
+        return (Math.PI * raio * raio);
+    }
+
+    @Override
+    public String toString() {
+        String s = "{";
+        s += this.getNome() + '\n';
+        s += this.getCor() + '\n';
+        s += "Raio: " + this.getRaio() + '\n';
+        s += "Araa: " + this.calculaArea() + '\n';
+        s += "}";
+
+        return s;
     }
 
 }

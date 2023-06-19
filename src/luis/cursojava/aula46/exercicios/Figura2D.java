@@ -8,6 +8,6 @@ package luis.cursojava.aula46.exercicios;
  *
  * @author luisb
  */
-public abstract class Figura2D extends FiguraGeometrica implements DimensaoSuperficial{
+public abstract class Figura2D extends FiguraGeometrica implements DimensaoSuperficial {
 
 }

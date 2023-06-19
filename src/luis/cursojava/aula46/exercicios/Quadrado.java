@@ -10,21 +10,38 @@ package luis.cursojava.aula46.exercicios;
  */
 public class Quadrado extends Figura2D {
 
-    private int lado;
+    private double lado;
 
-    public int getLado() {
+    public Quadrado() {
+    }
+
+    public Quadrado(double lado) {
+        this.lado = lado;
+    }
+
+    public double getLado() {
         return lado;
     }
 
-    public void setLado(int lado) {
+    public void setLado(double lado) {
         this.lado = lado;
     }
 
     @Override
-    public double calcularArea() {
-        return (lado*lado);
+    public double calculaArea() {
+        return lado * lado;
     }
 
-    
+    @Override
+    public String toString() {
+        String s = "{";
+        s += this.getNome() + '\n';
+        s += this.getCor() + '\n';
+        s += "Lado: " + this.getLado() + '\n';
+        s += "Araa: " + this.calculaArea() + '\n';
+        s += "}";
+
+        return s;
+    }
 
 }

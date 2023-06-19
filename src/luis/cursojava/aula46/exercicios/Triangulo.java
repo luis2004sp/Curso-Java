@@ -10,13 +10,13 @@ package luis.cursojava.aula46.exercicios;
  */
 public class Triangulo extends Figura2D {
 
-    private double base, altura;
+    private double altura, base;
 
-    public double getBase() {
-        return base;
+    public Triangulo() {
     }
 
-    public void setBase(double base) {
+    public Triangulo(double altura, double base) {
+        this.altura = altura;
         this.base = base;
     }
 
@@ -28,9 +28,29 @@ public class Triangulo extends Figura2D {
         this.altura = altura;
     }
 
+    public double getBase() {
+        return base;
+    }
+
+    public void setBase(double base) {
+        this.base = base;
+    }
+
     @Override
-    public double calcularArea() {
-        return (base * altura) / 2;
+    public double calculaArea() {
+        return ((base * altura) / 2);
+    }
+
+    @Override
+    public String toString() {
+        String s = "{";
+        s += this.getNome() + '\n';
+        s += this.getCor() + '\n';
+        s += "Base: " + this.getBase() + "Altura: " + this.getAltura() + '\n';
+        s += "Araa: " + this.calculaArea() + '\n';
+        s += "}";
+
+        return s;
     }
 
 }

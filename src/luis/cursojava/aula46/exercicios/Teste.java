@@ -11,59 +11,52 @@ package luis.cursojava.aula46.exercicios;
 public class Teste {
 
     public static void main(String[] args) {
-        Quadrado q = new Quadrado();
-        q.setLado(2);
-        q.setNome("Quadrado");
 
-        Circulo c = new Circulo();
-        c.setRaio(2);
-        c.setNome("Circulo");
+        double raio = 2, lado = 3, altura = 5;
 
-        Triangulo t = new Triangulo();
-        t.setAltura(2);
-        t.setBase(3);
-        t.setNome("Triangulo");
+        Quadrado f1 = new Quadrado(lado);
+        f1.setCor("Azul");
+        f1.setNome("Quadrado");
 
-        Cubo cubo = new Cubo();
-        cubo.setLado(3);
-        cubo.setNome("Cubo");
+        Circulo f2 = new Circulo(raio);
+        f2.setCor("Azul");
+        f2.setNome("Circulo");
 
-        Cilindro cili = new Cilindro();
-        cili.setAltura(3);
-        cili.setRaio(2);
-        cili.setNome("Cili");
+        Triangulo f3 = new Triangulo(altura, lado);
+        f3.setCor("Azul");
+        f3.setNome("Triangulo");
 
-        Piramide piri = new Piramide();
-        piri.setAltura(3);
-        piri.setApotema(4);
-        piri.setArestaBase(2);
-        piri.setNumPoliBase(4);
-        piri.setBase(q);
-        piri.setNome("Piramide");
+        Cubo f4 = new Cubo(lado);
+        f4.setCor("Azul");
+        f4.setNome("Cubo");
 
-        FiguraGeometrica[] figuras = new FiguraGeometrica[6];
+        Cilindro f5 = new Cilindro(altura, raio);
+        f5.setCor("Azul");
+        f5.setNome("Cilindro");
 
-        figuras[0] = q;
-        figuras[1] = c;
-        figuras[2] = t;
-        figuras[3] = cubo;
-        figuras[4] = cili;
-        figuras[5] = piri;
+        Piramide f6 = new Piramide();
+        f6.setAltura(3);
+        f6.setApotema(4);
+        f6.setArestaBase(2);
+        f6.setNumPoliBase(4);
+        f6.setBase(f3);
+        f6.setNome("Piramide");
+        f6.setCor("SLa");
 
-        for (FiguraGeometrica figura : figuras) {
-            System.out.println("--------------");
-            System.out.println("Nome: " + figura.getNome());
+        FiguraGeometrica[] figs = new FiguraGeometrica[6];
 
-            if (figura instanceof Figura2D) {
-                Figura2D f2d = (Figura2D) figura;
-                System.out.println("Area = " + f2d.calcularArea());
-            }
-            if (figura instanceof Figura3D) {
-                Figura3D f3d = (Figura3D) figura;
-                System.out.println("Area = " + f3d.calcularArea());
-                System.out.println("Volume = " + f3d.calcularVolume());
-            }
+        figs[0] = f1;
+        figs[1] = f2;
+        figs[2] = f3;
+        figs[3] = f4;
+        figs[4] = f5;
+        figs[5] = f6;
+
+        for (FiguraGeometrica fig : figs) {
+            System.out.println(fig);
+            System.out.println("");
         }
 
     }
+
 }
