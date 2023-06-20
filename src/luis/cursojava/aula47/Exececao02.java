@@ -9,23 +9,21 @@ package luis.cursojava.aula47;
  * @author luisb
  */
 public class Exececao02 {
+
     public static void main(String[] args) {
-        
-        try{
+
+        try {
             System.out.println("Isso será imprimido");
-            
+
             int[] vetor = new int[4];
-            
+
             vetor[5] = 5;
-            
-            
+
             System.out.println("Isso tbm");
-        } catch(Exception e){
+        } catch (Exception e) {
             System.out.println("Indice indicado não pode ser encontrado(404)\nNão pode receber valores");
         }
-        
-        
-        
+
     }
-  
+
 }

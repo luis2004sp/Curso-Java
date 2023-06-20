@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package luis.cursojava.aula48;
+package luis.cursojava.aula49;
 
 /**
  *
  * @author luisb
  */
-public class MultiplosCatch {
+public class Finally {
 
     public static void main(String[] args) {
 
@@ -23,6 +23,8 @@ public class MultiplosCatch {
                 System.out.println("Erro ao dividir por zero");
             } catch (ArrayIndexOutOfBoundsException e) {
                 System.out.println("Possição do array invalida");
+            } finally {
+                System.out.println("Essa linha é impressa apos o try ou o catch");
             }
         }
 

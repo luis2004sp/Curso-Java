@@ -23,7 +23,7 @@ public class Excecao {
         } catch (ArrayIndexOutOfBoundsException exception) {
             System.out.println("Excecão ao acessar um indice do vetor que não existe");
         }
-        
+
         System.out.println("Esse texto será impresso depois da exception");
 
     }
