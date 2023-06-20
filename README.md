@@ -1,2 +1,2 @@
 # Curso-Java
-## Exercicios e aulas do curso java que estou fazendo
+## Exercicios e aulas do curso java básico da Loiane
