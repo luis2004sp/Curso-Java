@@ -11,20 +11,16 @@ package luis.cursojava.aula52.exercicio;
 public class Teste {
 
     public static void main(String[] args) {
-        Agenda agenda = new Agenda(2);
-
-        Contato[] conts = new Contato[2];
+        Agenda agenda = new Agenda(3);
 
         Contato a = new Contato("Luis", "1234567");
         Contato b = new Contato("Aloisia", "1234567");
-        conts[0] = a;
-        conts[1] = b;
-        
-        for (Contato cont : conts) {
-            agenda.adicionarContatos(cont);
-        }
+        Contato c = new Contato("Antonio", "1234567");
 
-       agenda.consulta();
+        agenda.adicionarContatos(a);
+        agenda.adicionarContatos(b);
+        agenda.adicionarContatos(c);
 
+        agenda.consulta();
     }
 }

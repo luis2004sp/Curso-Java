@@ -22,11 +22,13 @@ public class Agenda {
 
     
     public void adicionarContatos(Contato c){
+        
         for (int i = 0; i < contatos.length; i++) {
             if(contatos[i] == null){
-               contatos[i] = c;
-               break;
+                contatos[i] = c;
+                break;
             }
+            
         }
     }
     

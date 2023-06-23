@@ -10,17 +10,20 @@ package luis.cursojava.aula52.exercicio;
  */
 public class Contato {
 
+    private static int idCont = 0;
     private String nome, telefone;
-    private static int ident = 0;
+    private int id;
 
     public Contato() {
+        idCont++;
+        id = idCont;
     }
 
     public Contato(String nome, String telefone) {
         this.nome = nome;
         this.telefone = telefone;
-        Contato.ident++;
-        
+        idCont++;
+        id = idCont;
     }
 
     public String getNome() {
@@ -39,20 +42,12 @@ public class Contato {
         this.telefone = telefone;
     }
 
-    public static int getIdent() {
-        return ident;
-    }
-
-    public static void setIdent(int ident) {
-        Contato.ident = ident;
-    }
-
     @Override
     public String toString() {
         String s = "--------------";
         s += "\nNome: " + this.getNome();
         s += "\nTelefone: " + this.getTelefone();
-        s += "\nID: " + getIdent();
+        s += "\nID: " + id;
         return s;
     }
 
