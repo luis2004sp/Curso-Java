@@ -13,29 +13,35 @@ public class Agenda {
     private Contato[] contatos;
 
     public Agenda() {
-
+        contatos = new Contato[5];
     }
 
     public Agenda(int quantidade) {
         contatos = new Contato[quantidade];
     }
 
-    
-    public void adicionarContatos(Contato c){
-        
+    public void adicionarContatos(Contato c) {
+
         for (int i = 0; i < contatos.length; i++) {
-            if(contatos[i] == null){
+            if (contatos[i] == null) {
                 contatos[i] = c;
                 break;
             }
-            
+
         }
     }
-    
-    public void consulta(){
+
+    public void consultaNome(String nome) {
         for (Contato contato : contatos) {
-            System.out.println(contato);
+            if (contato.getNome().equals(nome)) {
+                System.out.println(contato);
+                break;
+            } else {
+                System.out.println("Contato inesistente");
+                break;
+            }
+
         }
     }
-    
+
 }

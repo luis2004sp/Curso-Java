@@ -11,7 +11,7 @@ package luis.cursojava.aula52.exercicio;
 public class Contato {
 
     private static int idCont = 0;
-    private String nome, telefone;
+    private String nome, telefone, email;
     private int id;
 
     public Contato() {
@@ -42,12 +42,22 @@ public class Contato {
         this.telefone = telefone;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     @Override
     public String toString() {
-        String s = "--------------";
+        String s = "{";
         s += "\nNome: " + this.getNome();
         s += "\nTelefone: " + this.getTelefone();
+        s += "\nEmail: " + this.getEmail();
         s += "\nID: " + id;
+        s += "\n}";
         return s;
     }
 

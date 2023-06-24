@@ -4,6 +4,8 @@
  */
 package luis.cursojava.aula52.exercicio;
 
+import java.util.Scanner;
+
 /**
  *
  * @author luisb
@@ -11,16 +13,61 @@ package luis.cursojava.aula52.exercicio;
 public class Teste {
 
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
         Agenda agenda = new Agenda(3);
+        int opcao = 0;
 
-        Contato a = new Contato("Luis", "1234567");
-        Contato b = new Contato("Aloisia", "1234567");
-        Contato c = new Contato("Antonio", "1234567");
+        while (opcao != 3) {
+            opcao = menu(scan);
 
-        agenda.adicionarContatos(a);
-        agenda.adicionarContatos(b);
-        agenda.adicionarContatos(c);
+            if (opcao == 1) {
+                consulta(scan, agenda);
+            } else if (opcao == 2) {
+                adicinarContatos(scan, agenda);
+            }
+        }
 
-        agenda.consulta();
+    }
+
+    public static void adicinarContatos(Scanner scan, Agenda agenda) {
+
+        System.out.println("Criar Contato: ");
+        String nome = input(scan, "Nome: ");
+        String telefone = input(scan, "Telefone: ");
+        String email = input(scan, "Email: ");
+
+        Contato cont = new Contato();
+        cont.setNome(nome);
+        cont.setTelefone(telefone);
+        cont.setEmail(email);
+
+        agenda.adicionarContatos(cont);
+    }
+
+    public static String input(Scanner scan, String s) {
+        System.out.print(s);
+        String entrada = scan.nextLine();
+        return entrada;
+    }
+
+    public static int menu(Scanner scan) {
+        System.out.println("Opções");
+        System.out.println("1- Consultar um contato");
+        System.out.println("2- Adicionar um contato");
+        System.out.println("3- Sair");
+
+        int opcao = Integer.parseInt(input(scan, "Escolha uma opção: "));
+
+        if (opcao == 1 || opcao == 2 || opcao == 3) {
+            return opcao;
+        }
+        return 0;
+    }
+
+    public static void consulta(Scanner scan, Agenda agenda) {
+        System.out.println("Consulta  de Contato:");
+        String nome = input(scan, "Insira o nome: ");
+        agenda.consultaNome(nome);
     }
 }
