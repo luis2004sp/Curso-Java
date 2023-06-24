@@ -15,7 +15,7 @@ public class Teste {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        Agenda agenda = new Agenda(3);
+        Agenda agenda = new Agenda();
         int opcao = 0;
 
         while (opcao != 3) {
@@ -32,7 +32,7 @@ public class Teste {
 
     public static void adicinarContatos(Scanner scan, Agenda agenda) {
 
-        System.out.println("Criar Contato: ");
+        System.out.println("\nCriar Contato: ");
         String nome = input(scan, "Nome: ");
         String telefone = input(scan, "Telefone: ");
         String email = input(scan, "Email: ");
@@ -52,10 +52,10 @@ public class Teste {
     }
 
     public static int menu(Scanner scan) {
-        System.out.println("Opções");
+        System.out.println("\nOpções");
         System.out.println("1- Consultar um contato");
         System.out.println("2- Adicionar um contato");
-        System.out.println("3- Sair");
+        System.out.println("3- Sair\n");
 
         int opcao = Integer.parseInt(input(scan, "Escolha uma opção: "));
 
@@ -66,8 +66,9 @@ public class Teste {
     }
 
     public static void consulta(Scanner scan, Agenda agenda) {
-        System.out.println("Consulta  de Contato:");
+        System.out.println("\nConsulta  de Contato:");
         String nome = input(scan, "Insira o nome: ");
         agenda.consultaNome(nome);
     }
+
 }

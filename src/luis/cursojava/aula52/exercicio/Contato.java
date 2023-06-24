@@ -52,7 +52,7 @@ public class Contato {
 
     @Override
     public String toString() {
-        String s = "{";
+        String s = "\n{";
         s += "\nNome: " + this.getNome();
         s += "\nTelefone: " + this.getTelefone();
         s += "\nEmail: " + this.getEmail();
