@@ -9,39 +9,46 @@ package luis.cursojava.aula52.exercicio;
  * @author luisb
  */
 public class Agenda {
-
+    
     private Contato[] contatos;
-
+    
     public Agenda() {
-        contatos = new Contato[5];
+        contatos = new Contato[1];
     }
-
+    
     public Agenda(int quantidade) {
         contatos = new Contato[quantidade];
     }
-
-    public void adicionarContatos(Contato c) {
-
+    
+    public void adicionarContatos(Contato c) throws AgendaCheiaException {
+        
+        boolean cheio = true;
+        
         for (int i = 0; i < contatos.length; i++) {
             if (contatos[i] == null) {
                 contatos[i] = c;
+                cheio = false;
                 break;
             }
-
+            
         }
+        
+        throw new AgendaCheiaException();
     }
-
-    public void consultaNome(String nome) {
-        for (Contato contato : contatos) {
-            if (contato.getNome().equals(nome)) {
-                System.out.println(contato);
-                break;
-            } else {
-                System.out.println("Contato inesistente");
-                break;
+    
+    public int consultaNome(String nome) throws ContatoNaoExiste {
+        
+        for (int i = 0; i < contatos.length; i++) {
+            if (contatos[i].getNome().equalsIgnoreCase(nome)) {
+                return i;
             }
-
         }
+        
+        throw new ContatoNaoExiste(nome);
     }
-
+    
+    public void exibir(int i) {
+        System.out.println(contatos[i]);
+    }
+    
 }
