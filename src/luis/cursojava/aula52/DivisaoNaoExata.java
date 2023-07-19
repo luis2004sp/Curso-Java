@@ -8,7 +8,8 @@ package luis.cursojava.aula52;
  *
  * @author luisb
  */
-public class DivisaoNaoExata extends Exception{
+public class DivisaoNaoExata extends Exception {
+
     private int num, dem;
 
     public DivisaoNaoExata() {
@@ -24,7 +25,5 @@ public class DivisaoNaoExata extends Exception{
     public String toString() {
         return "Resultado de " + num + "/" + dem + " não é um inteiro!";
     }
-    
-    
-    
+
 }

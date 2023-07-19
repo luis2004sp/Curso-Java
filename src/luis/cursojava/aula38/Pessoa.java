@@ -11,7 +11,7 @@ package luis.cursojava.aula38;
 public class Pessoa {
 
     private String nome, endereco, telefone, cpf, telefoneCelular;
-     String nomeVisivel;
+    String nomeVisivel;
 
     public String getNome() {
         return nome;
@@ -52,7 +52,5 @@ public class Pessoa {
     public void setTelefoneCelular(String telefoneCelular) {
         this.telefoneCelular = telefoneCelular;
     }
-
-    
 
 }

@@ -15,7 +15,7 @@ public class Exercicio25 {
 
         for (int i = 0; i < a.length; i++) {
             a[i] = (int) (Math.random() * 11 + 1);
-            System.out.println("a = "+a[i]);
+            System.out.println("a = " + a[i]);
             if (a[i] % 2 == 0) {
                 b[i] = 1;
             } else {

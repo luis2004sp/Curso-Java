@@ -15,16 +15,16 @@ public class Exercicio11 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int[] a = new int[5];
-        int p =0;
-        
+        int p = 0;
+
         for (int i = 0; i < a.length; i++) {
             a[i] = scan.nextInt();
-            
-            if(a[i]%2==0){
+
+            if (a[i] % 2 == 0) {
                 p++;
             }
         }
-        System.out.println("Quantidade de pares = "+p);
-        
+        System.out.println("Quantidade de pares = " + p);
+
     }
 }

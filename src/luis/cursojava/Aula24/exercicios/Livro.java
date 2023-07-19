@@ -10,7 +10,7 @@ package luis.cursojava.Aula24.exercicios;
  */
 public class Livro {
 
-    String editora, autor, genero,publicacao,idioma,dimensoes;
+    String editora, autor, genero, publicacao, idioma, dimensoes;
     int paginas;
-    
+
 }

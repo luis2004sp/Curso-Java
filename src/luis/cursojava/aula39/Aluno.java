@@ -23,8 +23,6 @@ public class Aluno extends Pessoa {
         this.cursos = cursos;
     }
 
-    
-
     public String getCursos() {
         return cursos;
     }

@@ -8,7 +8,7 @@ package luis.cursojava.aula40;
  *
  * @author luisb
  */
-public class Aluno extends Pessoa{
+public class Aluno extends Pessoa {
 
     private String cursos;
     private double[] notas;
@@ -36,13 +36,13 @@ public class Aluno extends Pessoa{
     public boolean verificarAprovado() {
         return true;
     }
-    
+
     @Override
-    public String obterEndereco(){
+    public String obterEndereco() {
         String s = "Endereço do Aluno: ";
-        
-        s+=this.getEndereco();
-        
+
+        s += this.getEndereco();
+
         return s;
     }
 }

@@ -11,19 +11,24 @@ import java.util.Scanner;
  * @author luisb
  */
 public class Exercicio10 {
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        
+
         System.out.println("Digite o turno que você estuda: ");
         System.out.println("M-Matutino, V-Vesperino, ou N-Noturno");
         String turno = scan.next();
-        
-        switch (turno){
-            case "M": System.out.println("Bom dia!"); break;
-            case "V": System.out.println("Boa tarde!"); break;
-            case "N": System.out.println("Boa noite!"); break;
-            default: System.out.println("Valor Inválido");
+
+        switch (turno) {
+            case "M" ->
+                System.out.println("Bom dia!");
+            case "V" ->
+                System.out.println("Boa tarde!");
+            case "N" ->
+                System.out.println("Boa noite!");
+            default ->
+                System.out.println("Valor Inválido");
         }
-        
+
     }
 }

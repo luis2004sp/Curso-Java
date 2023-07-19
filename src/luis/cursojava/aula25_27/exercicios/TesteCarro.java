@@ -29,17 +29,17 @@ public class TesteCarro {
         fusca.numPassageiros = 4;
         fusca.capacidadeCombustivel = 30;
         fusca.consumoCombustivel = 0.15;
-                
+
         System.out.println(fusca.marca);
         System.out.println(fusca.modelo);
-        
+
         fusca.exibirAutonomia();
-        
+
         double autonomia = fusca.obterAutonomia();
-        System.out.println("Autononomia = "+autonomia);
-        System.out.println("Autononomia = "+fusca.obterAutonomia());
-        
-        System.out.println("Presisa de  "+fusca.calcularCombustivel(10));
+        System.out.println("Autononomia = " + autonomia);
+        System.out.println("Autononomia = " + fusca.obterAutonomia());
+
+        System.out.println("Presisa de  " + fusca.calcularCombustivel(10));
 
     }
 }

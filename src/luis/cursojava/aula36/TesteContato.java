@@ -17,10 +17,10 @@ public class TesteContato {
 
         //Nome
         Nome nome = new Nome();
-        
+
         nome.setPrimeiroNome("Luis Antonio");
         nome.setSegundoNome("Brugger Martinez");
-        
+
         contato.setNome(nome);// integor as informações do nome em contato
         // se não for feito o objt contato não terá acesso as informações do nome
 
@@ -53,10 +53,10 @@ public class TesteContato {
         contato.setTelefones(telefones);// integor as informações do telefone em contato
 
         // output
-        if(contato!=null && contato.getNome()!=null){
-            System.out.println("Sr. "+contato.getNome().getSegundoNome());
+        if (contato != null && contato.getNome() != null) {
+            System.out.println("Sr. " + contato.getNome().getSegundoNome());
         }
-        
+
         if (contato != null && contato.getEndereco() != null) {
             System.out.println("");
             System.out.println("Rua: " + contato.getEndereco().getNomeRua());
@@ -65,10 +65,10 @@ public class TesteContato {
             System.out.println("CEP: " + contato.getEndereco().getCep());
             System.out.println("");
         }
-        
+
         if (contato != null && contato.getTelefones() != null) {
             for (Telefone telefone : contato.getTelefones()) {
-                System.out.println(telefone.getDdd() + " " + telefone.getNumero()+'\n'+"Tipo: "+telefone.getTipo());
+                System.out.println(telefone.getDdd() + " " + telefone.getNumero() + '\n' + "Tipo: " + telefone.getTipo());
                 System.out.println("");
             }
         }

@@ -23,13 +23,12 @@ public class LeituraDadosTeclado {
         double idade = scan.nextDouble()
         System.out.println("Sua altura é: " + idade);
          */
-        
         System.out.println("Digite seu nome, telefone, endereço e nummero do endereço:");
         String nome = scan.next();
         int phone = scan.nextInt();
         String endereco = scan.next();
         short endNumero = scan.nextShort();
-        
+
         System.out.println(nome);
         System.out.println(phone);
         System.out.println(endereco);

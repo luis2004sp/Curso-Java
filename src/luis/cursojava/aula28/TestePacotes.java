@@ -9,9 +9,9 @@ package luis.cursojava.aula28;
  * @author luisb
  */
 public class TestePacotes {
+
     public static void main(String[] args) {
         luis.cursojava.aula25_27.exercicios.Carro car;
-        
-        
+
     }
 }

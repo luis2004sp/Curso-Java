@@ -20,9 +20,9 @@ public class Exercicio19 {
             result[i] = (nota1[i] + nota2[i]) / 2;
 
             if (result[i] < 7) {
-                System.out.println("Aluno " + (i+1) + " - Média = " + result[i] + " - Está: REPROVADO");
+                System.out.println("Aluno " + (i + 1) + " - Média = " + result[i] + " - Está: REPROVADO");
             } else {
-                System.out.println("Aluno " + (i+1) + " - Média = " + result[i] + " - Está: APROVADO");
+                System.out.println("Aluno " + (i + 1) + " - Média = " + result[i] + " - Está: APROVADO");
 
             }
         }

@@ -33,7 +33,7 @@ public class Carro {
 
     public Carro(String marca, String modelo) {
         this(marca, modelo, 10);
-     //chama um construtor dentro da calsse;
+        //chama um construtor dentro da calsse;
     }
 
     void exibirAutonomia() {

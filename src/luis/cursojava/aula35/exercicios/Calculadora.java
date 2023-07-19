@@ -18,13 +18,12 @@ public class Calculadora {
 
         return finobacci(a - 1) + finobacci(a - 2);
     }
-    
-    
-    public static int somatorio(int num){
-        if(num==1){
+
+    public static int somatorio(int num) {
+        if (num == 1) {
             return 1;
         }
-        
-        return num + somatorio(num-1);
+
+        return num + somatorio(num - 1);
     }
 }

@@ -13,7 +13,7 @@ public class TesteCalculadora {
     public static void main(String[] args) {
 
 //        System.out.println(Calculadora.finobacci(5));
-        int soma =  Calculadora.somatorio(5);
+        int soma = Calculadora.somatorio(5);
         System.out.println(soma);
     }
 }

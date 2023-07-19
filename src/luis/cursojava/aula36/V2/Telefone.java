@@ -9,6 +9,7 @@ package luis.cursojava.aula36.V2;
  * @author luisb
  */
 public class Telefone {
+
     private String ddd, numero, tipo;
 
     public String getDdd() {
@@ -34,5 +35,5 @@ public class Telefone {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
-    
+
 }

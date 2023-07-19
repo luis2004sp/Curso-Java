@@ -29,6 +29,7 @@ public class ConversaoUnidadesDeTempo {
     public static void mesDias(short a) {
         System.out.println(a * 30);
     }
+
     public static void anoDias(short a) {
         System.out.println(a * 365);
     }

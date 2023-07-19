@@ -32,9 +32,8 @@ public class Teste {
 
         double[] notas2 = {10, 9, 8, 7};
         aluno2.setNotas(notas2);
-        
+
         System.out.println(aluno.equals(aluno2));
-        
-        
+
     }
 }

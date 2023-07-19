@@ -19,7 +19,7 @@ public class TesteCalculadora {
 //        
 //      com static
         resultSoma = MinhaCalculadora.soma(1, 2);
-        
+
         soma2Valores(1, 2);
 
     }

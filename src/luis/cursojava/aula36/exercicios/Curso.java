@@ -9,6 +9,7 @@ package luis.cursojava.aula36.exercicios;
  * @author luisb
  */
 public class Curso {
+
     private String nome, horario;
     private Professor professor;
     private Aluno[] alunos;
@@ -44,5 +45,5 @@ public class Curso {
     public void setAlunos(Aluno[] alunos) {
         this.alunos = alunos;
     }
-    
+
 }

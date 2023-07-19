@@ -9,13 +9,14 @@ package luis.cursojava.aula16_17.exercicios;
  * @author luisb
  */
 public class Exercicio6 {
+
     public static void main(String[] args) {
         for (int i = 1; i < 21; i++) {
-            System.out.println("i = "+i);
+            System.out.println("i = " + i);
         }
-        
+
         for (int i = 1; i < 21; i++) {
-            System.out.print(i+", ");
+            System.out.print(i + ", ");
         }
     }
 }

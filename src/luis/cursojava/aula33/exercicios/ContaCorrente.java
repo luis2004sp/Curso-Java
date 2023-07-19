@@ -20,8 +20,6 @@ public class ContaCorrente {
         this.limite = limite;
         this.especial = especial;
     }
-    
-    
 
     public void saque(double valor) {
         if (saldo - valor >= 0) {

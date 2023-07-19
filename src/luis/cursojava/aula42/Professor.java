@@ -38,7 +38,6 @@ public class Professor {
         String s = "Endereço do Professor: ";
 
         //s += this.getEndereco();
-
         return s;
     }
 

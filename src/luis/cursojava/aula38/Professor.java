@@ -8,7 +8,7 @@ package luis.cursojava.aula38;
  *
  * @author luisb
  */
-public class Professor extends Pessoa{
+public class Professor extends Pessoa {
 
     private String nomeCurso;
     double salario;

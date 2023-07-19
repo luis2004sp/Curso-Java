@@ -11,7 +11,7 @@ package luis.cursojava.Aula24.exercicios;
 public class Lampada {
 
     String modelo, tenccao, cor, tipoLuz;
-    double voltagem, preco, potencia,garantia;
+    double voltagem, preco, potencia, garantia;
     String[] tipos;
 
 }

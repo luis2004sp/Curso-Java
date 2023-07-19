@@ -19,7 +19,7 @@ public class Exercicio18_19 {
         do {
             System.out.println("Digite um número: ");
             int num = scan.nextInt();
-            
+
             if (num >= 0 && num <= 1000) {
                 soma += num;
 
@@ -30,7 +30,7 @@ public class Exercicio18_19 {
                     maior = num;
                 }
 
-            } else{
+            } else {
                 System.out.println("Numero invalido");
             }
             i--;

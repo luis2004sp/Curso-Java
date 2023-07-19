@@ -54,5 +54,4 @@ public final class Pessoa {
     }
 
     //public abstract void imprimirEndereco();
-
 }

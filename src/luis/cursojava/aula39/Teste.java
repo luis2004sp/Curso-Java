@@ -9,7 +9,8 @@ package luis.cursojava.aula39;
  * @author luisb
  */
 public class Teste {
+
     public static void main(String[] args) {
-        
+
     }
 }

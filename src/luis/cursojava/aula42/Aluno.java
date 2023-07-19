@@ -42,7 +42,6 @@ public class Aluno {
         String s = "Endereço do Aluno: ";
 
         //s += this.getEndereco();
-
         return s;
     }
 

@@ -52,7 +52,7 @@ public class Pessoa {
         this.telefoneCelular = telefoneCelular;
     }
 
-    public String obterEndereco(){
+    public String obterEndereco() {
         return this.endereco;
     }
 

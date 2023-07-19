@@ -86,12 +86,12 @@ public class Aluno {
     public void setDiciplinas(String[] diciplinas) {
         this.diciplinas = diciplinas;
     }
-    
-    public void setNomeDiciplina(int p, String nome){
+
+    public void setNomeDiciplina(int p, String nome) {
         this.diciplinas[p] = nome;
     }
-    
-    public void setNotaPos(int i, int j, double nota){
+
+    public void setNotaPos(int i, int j, double nota) {
         this.notas[i][j] = nota;
     }
 

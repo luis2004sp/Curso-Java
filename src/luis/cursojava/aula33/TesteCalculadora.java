@@ -12,13 +12,12 @@ public class TesteCalculadora {
 
     public static void main(String[] args) {
         MinhaCalculadora cal = new MinhaCalculadora();
-        int[] numbs = {1,2,3,4,5};
-        
+        int[] numbs = {1, 2, 3, 4, 5};
 
         cal.soma(1, 2);
         cal.soma(1.0, 2.0);
         int somaNubs = cal.soma(numbs);
-        
+
         System.out.println(somaNubs);
     }
 }

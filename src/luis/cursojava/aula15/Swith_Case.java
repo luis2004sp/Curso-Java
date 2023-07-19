@@ -17,7 +17,7 @@ public class Swith_Case {
 
         int diaSemana = scan.nextInt();
 
-       /* if (diaSemana == 1) {
+        /* if (diaSemana == 1) {
             System.out.println("Domingo");
         } else if (diaSemana == 2) {
             System.out.println("Segunda");
@@ -34,8 +34,7 @@ public class Swith_Case {
         } else {
             System.out.println("Dia invalido!");
         }*/
-        
-        /*switch (diaSemana) {
+ /*switch (diaSemana) {
             case 1: System.out.println("Domingo"); break; // case seria um if
             case 2: System.out.println("Segunda");break;
             case 3: System.out.println("terça");break;
@@ -46,16 +45,21 @@ public class Swith_Case {
             default: System.out.println("Dia invalido!"); // default age como um else
                 
         }*/
-        
         switch (diaSemana) {
             case 2:
             case 3:
             case 4:
             case 5:
-            case 6: System.out.println("Dia util."); break;
-            case 1:    
-            case 7: System.out.println("FDS");  break;
-            default: System.out.println("Dia invalido");  break;
+            case 6:
+                System.out.println("Dia util.");
+                break;
+            case 1:
+            case 7:
+                System.out.println("FDS");
+                break;
+            default:
+                System.out.println("Dia invalido");
+                break;
         }
     }
 }

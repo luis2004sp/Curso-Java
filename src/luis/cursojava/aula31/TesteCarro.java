@@ -13,7 +13,6 @@ public class TesteCarro {
     public static void main(String[] args) {
         Carro car = new Carro(10);
 
-
         double cal = car.calcularCombustivel(10);
         System.out.println(cal);
 

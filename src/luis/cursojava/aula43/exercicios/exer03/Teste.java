@@ -30,12 +30,12 @@ public class Teste {
         animais[0] = camelo;
         animais[1] = tubarao;
         animais[2] = urso;
-        
+
         System.out.println("Zoo");
         for (Animal animal : animais) {
             System.out.println("---------------");
             System.out.println(animal.toString());
-            
+
         }
     }
 

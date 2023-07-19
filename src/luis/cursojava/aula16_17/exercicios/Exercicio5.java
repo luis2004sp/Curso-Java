@@ -23,9 +23,9 @@ public class Exercicio5 {
         populacaoB = scan.nextInt();
         double taxaB = scan.nextDouble();
 
-        taxaA = taxaA/100;
-        taxaB = taxaB/100;
-        
+        taxaA = taxaA / 100;
+        taxaB = taxaB / 100;
+
         while (populacaoA < populacaoB) {
             populacaoA *= (taxaA + 1);
             populacaoB *= (taxaB + 1);

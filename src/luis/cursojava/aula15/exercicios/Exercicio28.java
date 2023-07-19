@@ -9,5 +9,5 @@ package luis.cursojava.aula15.exercicios;
  * @author luisb
  */
 public class Exercicio28 {
-    
+
 }

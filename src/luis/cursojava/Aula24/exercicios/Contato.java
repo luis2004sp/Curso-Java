@@ -9,8 +9,8 @@ package luis.cursojava.Aula24.exercicios;
  * @author luisb
  */
 public class Contato {
-    
-    String  nome, sobrenome; 
+
+    String nome, sobrenome;
     String[] telefones;
-    
+
 }

@@ -23,10 +23,9 @@ public class ExercLivro {
         System.out.println(HarryPotterPedraFilosofal.genero);
         System.out.println(HarryPotterPedraFilosofal.paginas);
 
-        
         LivroDeLivraria oki = new LivroDeLivraria();
-        
-        oki.autor="Doke";
+
+        oki.autor = "Doke";
         System.out.println(oki.autor);
     }
 

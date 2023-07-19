@@ -8,7 +8,7 @@ package luis.cursojava.aula40;
  *
  * @author luisb
  */
-public class Professor extends Pessoa{
+public class Professor extends Pessoa {
 
     private String nomeCurso;
     double salario;
@@ -32,13 +32,13 @@ public class Professor extends Pessoa{
     public double calcularSalarioLiquido() {
         return 0;
     }
-    
+
     @Override
-    public String obterEndereco(){
+    public String obterEndereco() {
         String s = "Endereço do Professor: ";
-        
-        s+=this.getEndereco();
-        
+
+        s += this.getEndereco();
+
         return s;
     }
 }

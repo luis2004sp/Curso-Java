@@ -22,16 +22,16 @@ public class Exercicio36 {
         System.out.print("terminar em: ");
         int fim = scan.nextInt();
 
-        if(inicio<fim){
+        if (inicio < fim) {
             System.out.println("Vou montar uma tabuada de " + tabuada + "começando em " + inicio + " terminando em " + fim);
 
             for (int i = inicio; i <= fim; i++) {
                 System.out.println(tabuada + " x " + i + " = " + (tabuada * i));
             }
-        } else{
+        } else {
             System.out.println("Digita direito");
         }
-        
+
     }
 
 }

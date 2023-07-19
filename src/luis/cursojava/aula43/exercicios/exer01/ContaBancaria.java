@@ -9,6 +9,7 @@ package luis.cursojava.aula43.exercicios.exer01;
  * @author luisb
  */
 public class ContaBancaria {
+
     private String nomeCliente, numConta;
     double saldo;
 
@@ -40,18 +41,18 @@ public class ContaBancaria {
     public String toString() {
         return "ContaBancaria{" + "nomeCliente= " + nomeCliente + ", numConta= " + numConta + ", saldo= " + saldo + '}';
     }
-    
-    public void depositar(double valor){
-        saldo+=valor;
+
+    public void depositar(double valor) {
+        saldo += valor;
     }
-    
-    public void saque(double valor){
-        if((saldo-valor)>=0){
-            saldo-=valor;
+
+    public void saque(double valor) {
+        if ((saldo - valor) >= 0) {
+            saldo -= valor;
             System.out.println("Saque realizado!");
-        } else{
+        } else {
             System.out.println("Saque negado");
         }
-        
+
     }
 }

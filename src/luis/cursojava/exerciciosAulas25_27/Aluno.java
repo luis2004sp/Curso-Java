@@ -15,14 +15,14 @@ public class Aluno {
     double[] notas;
     int numMatricula;
 
-    double media(){
-        double soma=0;
+    double media() {
+        double soma = 0;
         for (int i = 0; i < notas.length; i++) {
-            soma+= notas[i];
+            soma += notas[i];
         }
-        return soma/notas.length;
+        return soma / notas.length;
     }
-    
+
     void aprovacao(double media) {
         if (media >= 7) {
             System.out.println("Aluno Aprovado!");

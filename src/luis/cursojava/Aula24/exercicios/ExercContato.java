@@ -15,15 +15,14 @@ public class ExercContato {
 
         contato1.nome = "Luis";
         contato1.sobrenome = "Brugger Martinez";
-        
+
         contato1.telefones = new String[3];
         contato1.telefones[0] = "952215437";
         contato1.telefones[1] = "981007694";
         contato1.telefones[2] = "963528774";
 
-        
-        System.out.println(contato1.nome +" "+contato1.sobrenome);
-        System.out.println("tel : "+contato1.telefones[0]);
+        System.out.println(contato1.nome + " " + contato1.sobrenome);
+        System.out.println("tel : " + contato1.telefones[0]);
     }
 
 }

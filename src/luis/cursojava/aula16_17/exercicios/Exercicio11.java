@@ -33,6 +33,6 @@ public class Exercicio11 {
                 soma += i;
             }
         }
-        System.out.println('\n' +"Soma = " + soma);
+        System.out.println('\n' + "Soma = " + soma);
     }
 }

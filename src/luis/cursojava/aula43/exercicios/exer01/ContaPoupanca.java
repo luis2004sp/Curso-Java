@@ -25,8 +25,8 @@ public class ContaPoupanca extends ContaBancaria {
         return "ContaPoupanca{" + super.toString() + diaRendimento + '}'; // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
     }
 
-    public void calcularNovoSalto(double taxa){
-        this.setSaldo(this.getSaldo()+this.getSaldo()+taxa);
+    public void calcularNovoSalto(double taxa) {
+        this.setSaldo(this.getSaldo() + this.getSaldo() + taxa);
     }
-    
+
 }

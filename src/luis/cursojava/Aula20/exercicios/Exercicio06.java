@@ -4,7 +4,7 @@
 // verificar se tem uma linha completa para vitoria
 // depois de 9 rodadas encerrar o jogo
 package luis.cursojava.Aula20.exercicios;
- 
+
 import java.util.Scanner;
 
 public class Exercicio06 {

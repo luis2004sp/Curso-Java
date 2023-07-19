@@ -9,23 +9,24 @@ package luis.cursojava.aula34.exercicios;
  * @author luisb
  */
 public class ConversaoUnidadesDeVolume {
-    public static double litroCentimetro(double a){
-        return a*1000;
+
+    public static double litroCentimetro(double a) {
+        return a * 1000;
     }
-    
-    public static double metroLitros(double a){
+
+    public static double metroLitros(double a) {
         return litroCentimetro(a);
     }
-    
-    public static double metroPes(double a){
-        return a*35.32;
+
+    public static double metroPes(double a) {
+        return a * 35.32;
     }
-    
-    public static double galaoAmericanoParaPolegadas(double a){
+
+    public static double galaoAmericanoParaPolegadas(double a) {
         return a * 231;
     }
-    
-    public static double galaoAmericanoParaLitro(double a){
+
+    public static double galaoAmericanoParaLitro(double a) {
         return a * 3785;
     }
 }

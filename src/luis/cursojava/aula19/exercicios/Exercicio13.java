@@ -15,16 +15,16 @@ public class Exercicio13 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int[] a = new int[5];
-        int mult=0;
+        int mult = 0;
 
         for (int i = 0; i < a.length; i++) {
-            a[i]=scan.nextInt();
-            
-            if(a[i]%5==0){
-                mult+=a[i];
+            a[i] = scan.nextInt();
+
+            if (a[i] % 5 == 0) {
+                mult += a[i];
             }
         }
-        
-        System.out.println("Soma = "+mult);
+
+        System.out.println("Soma = " + mult);
     }
 }

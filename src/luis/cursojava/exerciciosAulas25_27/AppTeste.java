@@ -28,7 +28,6 @@ public class AppTeste {
         cc.saldo();
         cc.saque(901);
 
-
         Aluno aluno1 = new Aluno();
 
         aluno1.nome = "Luis";
@@ -45,13 +44,10 @@ public class AppTeste {
         aluno1.notas[1] = 8;
         aluno1.notas[2] = 6.5;
         aluno1.notas[3] = 6.5;
-        
-        
+
         double media = aluno1.media();
         System.out.println(media);
         aluno1.aprovacao(media);
-        
-        
 
     }
 }

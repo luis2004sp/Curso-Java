@@ -15,19 +15,17 @@ public class Exercicio31 {
 
         for (int i = 0; i < a.length; i++) {
             a[i] = (int) (Math.random() * 101 + 1);
-            System.out.print(a[i]+" - ");
-            
-            
-           
+            System.out.print(a[i] + " - ");
+
         }
         System.out.println("");
         for (int i = 0; i < b.length; i++) {
-            if(a[i]%2==0){
-                b[i]=a[i];
+            if (a[i] % 2 == 0) {
+                b[i] = a[i];
             }
-            System.out.print(b[i]+" - ");
+            System.out.print(b[i] + " - ");
         }
-        
+
     }
 
 }

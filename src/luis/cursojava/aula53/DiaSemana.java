@@ -9,5 +9,5 @@ package luis.cursojava.aula53;
  * @author luisb
  */
 public enum DiaSemana {
-    SEGUNDA, TERCA, QUANTA, QUINTA, SEXTA, SABADO, DOMINGO;
+    SEGUNDA, TERCA, QUARTA, QUINTA, SEXTA, SABADO, DOMINGO;
 }

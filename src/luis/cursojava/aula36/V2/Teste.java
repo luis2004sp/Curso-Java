@@ -53,19 +53,18 @@ public class Teste {
         tele2.setNumero("8888-9999");
 
         Telefone[] telefones = new Telefone[2];
-        telefones[0]=tele;
-        telefones[1]= tele2;
-        
+        telefones[0] = tele;
+        telefones[1] = tele2;
+
         c.setTelefones(telefones);
-        
-        if(c!=null && c.getTelefones()!=null){
+
+        if (c != null && c.getTelefones() != null) {
             for (Telefone telefone : c.getTelefones()) {
-                System.out.println(telefone.getDdd()+" "+telefone.getNumero());   
+                System.out.println(telefone.getDdd() + " " + telefone.getNumero());
                 System.out.println(telefone.getTipo());
                 System.out.println("");
             }
         }
-        
 
         System.out.println(c.getNome());
         // System.out.println(c.getTelefone());

@@ -22,7 +22,7 @@ public class ExceptionGenerica {
             } catch (Exception e) {
                 System.out.println(e.getMessage());
                 e.printStackTrace();
-            } 
+            }
         }
 
     }

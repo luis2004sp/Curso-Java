@@ -54,5 +54,4 @@ public class Carro {
         this.consumoCombustivel = consumoCombustivel;
     }
 
-    
 }

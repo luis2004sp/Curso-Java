@@ -9,12 +9,13 @@ package luis.cursojava.aula11;
  * @author luisb
  */
 public class VariavelPontoFlutuante {
+
     public static void main(String[] args) {
         double valorPassagem = 2.90;
-        
+
         float valorBatata = 4.99f;
-        
-        System.out.println("Valor da passagem = " +valorPassagem);
-        System.out.println("Valor da batata = " +valorBatata);
+
+        System.out.println("Valor da passagem = " + valorPassagem);
+        System.out.println("Valor da batata = " + valorBatata);
     }
 }

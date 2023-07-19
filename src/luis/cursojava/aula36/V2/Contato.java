@@ -38,6 +38,4 @@ public class Contato {
         this.telefones = telefones;
     }
 
-    
-
 }

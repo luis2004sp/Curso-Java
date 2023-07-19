@@ -16,10 +16,10 @@ public class Exercicio05 {
         Scanner scan = new Scanner(System.in);
 
         int[] a = new int[5], b = new int[5];
-        
+
         for (int i = 0; i < a.length; i++) {
-            a[i]=scan.nextInt();
-            b[i] = a[i]*i;
+            a[i] = scan.nextInt();
+            b[i] = a[i] * i;
         }
         for (int i = 0; i < b.length; i++) {
             System.out.println(b[i]);

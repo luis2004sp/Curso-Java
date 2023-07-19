@@ -12,9 +12,9 @@ public class Main {
 
     public static void main(String[] args) {
         usandoConstantes();
-        
+
         System.out.println("");
-        
+
         usandoEnum();
     }
 
@@ -61,7 +61,7 @@ public class Main {
     private static void usandoEnum() {
         DiaSemana segunda = DiaSemana.SEGUNDA;
         DiaSemana terca = DiaSemana.TERCA;
-        DiaSemana quarta = DiaSemana.QUANTA;
+        DiaSemana quarta = DiaSemana.QUARTA;
         DiaSemana quinta = DiaSemana.QUINTA;
         DiaSemana sexta = DiaSemana.SEXTA;
         DiaSemana sabado = DiaSemana.SABADO;
@@ -84,7 +84,7 @@ public class Main {
                 System.out.println("Segunda");
             case TERCA ->
                 System.out.println("Terça");
-            case QUANTA ->
+            case QUARTA ->
                 System.out.println("Quanta");
             case QUINTA ->
                 System.out.println("Quinta");

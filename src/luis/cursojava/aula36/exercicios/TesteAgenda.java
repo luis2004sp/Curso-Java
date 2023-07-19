@@ -22,7 +22,7 @@ public class TesteAgenda {
 
         Contato[] contatos = new Contato[3];
         agenda.setContatos(contatos);
-        
+
         for (int i = 0; i < contatos.length; i++) {
             Contato c = new Contato();
 
@@ -37,7 +37,6 @@ public class TesteAgenda {
 
             contatos[i] = c;
         }
-        
 
         if (agenda != null && agenda.getContatos() != null) {
             for (Contato contato : agenda.getContatos()) {

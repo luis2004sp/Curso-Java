@@ -35,7 +35,7 @@ public class Exercicio02 {
         }
 
         System.out.println("");
-        
+
         int maiorColuna = Integer.MIN_VALUE, menorColuna = Integer.MAX_VALUE; //coluna 7
         for (int i = 0; i < m.length; i++) {
             System.out.print(m[i][7] + " - ");

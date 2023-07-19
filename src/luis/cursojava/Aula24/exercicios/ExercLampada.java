@@ -17,9 +17,9 @@ public class ExercLampada {
         lamp.cor = "Branco";
         lamp.garantia = 36;
 
-        System.out.println("R$ "+lamp.preco);
+        System.out.println("R$ " + lamp.preco);
         System.out.println(lamp.cor);
-        System.out.println(lamp.garantia+" meses");
+        System.out.println(lamp.garantia + " meses");
 
     }
 
