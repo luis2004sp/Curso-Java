@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package luis.cursojava.exerciciosAulas25_27;
+package luis.cursojava.Aulas25_27;
 
 /**
  *

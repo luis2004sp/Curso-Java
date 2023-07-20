@@ -11,7 +11,7 @@ package luis.cursojava.aula28;
 public class TestePacotes {
 
     public static void main(String[] args) {
-        luis.cursojava.aula25_27.exercicios.Carro car;
+        luis.cursojava.Aulas25_27.exercicios.Carro car;
 
     }
 }
