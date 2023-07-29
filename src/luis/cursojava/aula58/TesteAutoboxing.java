@@ -39,10 +39,9 @@ public class TesteAutoboxing {
         a = 10.0;
         b = 12.2;
         c = 4.7;
-        
-        Double media = (a+b+c)/3;
+
+        Double media = (a + b + c) / 3;
         System.out.println(media);
-        
 
     }
 }

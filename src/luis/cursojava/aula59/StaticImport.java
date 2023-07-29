@@ -9,13 +9,11 @@ package luis.cursojava.aula59;
 import static java.lang.Math.*;
 import java.util.Scanner;
 
-
 public class StaticImport {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-                
-       
+
         double a = 2, b = 3, c = 4;
 
         System.out.println(Math.pow(a, b));
@@ -30,7 +28,6 @@ public class StaticImport {
         System.out.println(round(cos(90)));
         System.out.println(round(tan(90)));
         System.out.println(tan(90));
-        
-        
+
     }
 }
