@@ -48,6 +48,7 @@ public class TikTak {
         tik = false;
 
         notify();
+
         try {
             while (!tik) {
 
