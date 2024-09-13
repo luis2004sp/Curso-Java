@@ -34,7 +34,8 @@ public class Teste {
 
         }
     }
-        private static void printWeekDay(DiaSemana day) {
+
+    private static void printWeekDay(DiaSemana day) {
         switch (day) {
             case DOMINGO ->
                 System.out.println("Domingo");
